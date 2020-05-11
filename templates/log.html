@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2 class="mt-4">Log</h2>
+    
+        {% for log in logs %}
+            
+        {% endfor %}
+    <table class="mt-3 table"> 
+        <tbody><tr>
+            <th>Target</th>
+            <th>Action</th>
+            <th>Status</th>
+            <th>Time</th>
+            <th>Messages</th>
+        </tr><tr>
+                <td>{{ log.target }}</td>
+                <td>{{ log.action }}</td>
+                <td>{{ log.status }}</td>
+                <td>{{ log.time }}</td>
+                <td>{{ log.messages }}</td>
+            </tr></tbody></table>
+{% endblock content %}
